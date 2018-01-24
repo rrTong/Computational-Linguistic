@@ -1,0 +1,56 @@
+transition(1, Phoneme, 1, Phoneme).
+transition(1, s, 2, s).
+transition(2, Phoneme, 1, Phoneme).
+transition(1, p, 3, p_h).
+transition(3, aa1, 1, aa1).
+transition(3, ae1, 1, ae1).
+transition(3, ah1, 1, ah1).
+transition(3, ao1, 1, ao1).
+transition(3, aw1, 1, aw1).
+transition(3, ay1, 1, ay1).
+transition(3, eh1, 1, eh1).
+transition(3, er1, 1, er1).
+transition(3, ey1, 1, ey1).
+transition(3, ih1, 1, ih1).
+transition(3, iy1, 1, iy1).
+transition(3, ow1, 1, ow1).
+transition(3, oy1, 1, oy1).
+transition(3, uh1, 1, uh1).
+transition(3, uw1, 1, uw1).
+transition(1, t, 4, t_h).
+transition(4, aa1, 1, aa1).
+transition(4, ae1, 1, ae1).
+transition(4, ah1, 1, ah1).
+transition(4, ao1, 1, ao1).
+transition(4, aw1, 1, aw1).
+transition(4, ay1, 1, ay1).
+transition(4, eh1, 1, eh1).
+transition(4, er1, 1, er1).
+transition(4, ey1, 1, ey1).
+transition(4, ih1, 1, ih1).
+transition(4, iy1, 1, iy1).
+transition(4, ow1, 1, ow1).
+transition(4, oy1, 1, oy1).
+transition(4, uh1, 1, uh1).
+transition(4, uw1, 1, uw1).
+transition(1, k, 5, k_h).
+transition(5, aa1, 1, aa1).
+transition(5, ae1, 1, ae1).
+transition(5, ah1, 1, ah1).
+transition(5, ao1, 1, ao1).
+transition(5, aw1, 1, aw1).
+transition(5, ay1, 1, ay1).
+transition(5, eh1, 1, eh1).
+transition(5, er1, 1, er1).
+transition(5, ey1, 1, ey1).
+transition(5, ih1, 1, ih1).
+transition(5, iy1, 1, iy1).
+transition(5, ow1, 1, ow1).
+transition(5, oy1, 1, oy1).
+transition(5, uh1, 1, uh1).
+transition(5, uw1, 1, uw1).
+
+
+initial(1).
+final(1).
+final(2).

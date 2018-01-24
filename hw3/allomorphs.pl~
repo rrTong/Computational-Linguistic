@@ -1,0 +1,112 @@
+transition(1, S, 1, S) :-
+    S \= eps,
+    S \= '^',
+    S \= s.
+
+% ENTER ADDITIONAL TRANSITIONS HERE
+
+transition(1, '#', 1, '#').
+
+transition(1, '^', 1, eps).
+
+transition(1, S, 2, S) :-
+    voiced(S),
+    nonsibilant(S).
+
+transition(2, '^', 3, eps).
+
+transition(3, s, 4, z).
+
+transition(4, '#', 1, '#').
+
+transition(1, S, 5, S) :-
+    S = f;
+    S = hh;
+    S = k;
+    S = p;
+    S = t;
+    S = th,
+    nonsibilant(S).
+
+transition(5, '^', 6, eps).
+
+transition(6, s, 7, s).
+
+transition(7, '#', 1, '#').
+
+transition(1, S, 8, S) :-
+    sibilant(S).
+
+transition(8, '^', 9, eps).
+
+transition(9, s, 10, ah).
+
+transition(10, eps, 11, z).
+
+transition(11, '#', 1, '#').
+
+initial(1).
+final(1).
+
+% potentially useful features from IPA
+
+voiced(S) :-
+    S = aa;
+    S = ae;
+    S = ah;
+    S = ao;
+    S = aw;
+    S = ay;
+    S = b;
+    S = d;
+    S = dh;
+    S = eh;
+% fill in more
+    S = er;
+    S = ey;
+    S = g;
+    S = ih;
+    S = iy;
+    S = jh;
+    S = l;
+    S = m;
+    S = n;
+    S = ng;
+    S = ow;
+    S = oy;
+    S = r;
+    S = uh;
+    S = uw;
+    S = v;
+    S = w;
+    S = y;
+    S = z;
+    S = zh.
+
+sibilant(S) :-
+    S = ch;
+    S = s;
+    S = sh;
+    S = jh;
+    S = z;
+    S = zh.
+
+nonsibilant(S) :-
+    not(sibilant(S)).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
